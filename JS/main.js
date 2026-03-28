@@ -15,6 +15,7 @@ reveal();
 // 漂浮羊毛纖維
 window.addEventListener("load", () => {
   const canvas = document.getElementById("fiberCanvas");
+  if (!canvas) return;
   const ctx = canvas.getContext("2d");
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
