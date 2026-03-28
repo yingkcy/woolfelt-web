@@ -23,7 +23,7 @@ body{
   z-index: 1000;
   background: rgba(255,210,240,0.6);
   backdrop-filter: blur(10px);
-  height: 80px;
+  padding: 12px 20px;
 }
 
 .nav nav a {
