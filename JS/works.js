@@ -172,8 +172,8 @@ const works = [
     seat: "16",
     img: "image/works/16.jpg",
     ref: "image/drafts/16.jpg",
-    desc_zh: "這是彰女紅樓的一個角落，也是我一直很喜歡的地方。乍看之下它其實很安靜，但我特別被這裡的層次感吸引，深淺不同的綠色樹木，配上白雲和藍天，冬天時還會開著山櫻花，顏色柔和卻很有存在感。每次跑操場的時候，我都會很期待跑到這個轉彎處，因為看這個畫面，心情會不自覺地放慢下來。也正因為這樣，我才選擇這個校園一角作為家政課羊毛氈作品的主題。在設計的時候，我希望能表現出樹冠茂密、像絨毛一樣柔軟的感覺，所以刻意沒有把羊毛戳得太實、太緊，而是保留一些蓬鬆感，有些葉叢則是用揉捲羊毛的方式來固定，讓它看起來像一叢一叢自然生長的樣子，這樣不只可以呈現出樹葉的層次，也能增加整個畫面的變化性和立體感。對我來說，這個角落帶來的是溫暖、安靜又熟悉的感覺，而羊毛氈柔軟、可以慢慢堆疊的特性，正好能把這樣的風景，從只能用眼睛欣賞的畫面，轉化成一件可以用雙手觸摸的作品。",
-    desc_en: "This piece recreates the layered blooming of a rose using wool felt."
+    desc_zh: "白雲和藍天，冬天時還會開著山櫻花，這裡絕對是彰女最美的祕境。設計作品時，我希望能表現出樹冠茂密、像絨毛一樣柔軟的感覺，因此不把羊毛戳得太緊實，刻意保留一些蓬鬆感，讓它看起來像一叢一叢自然生長的樣子。",
+    desc_en: "Under the azure sky and white clouds, winter brings the blooming of mountain cherries—a scene that marks the most stunning secluded corner of CHGSH. In my design, I aimed to evoke the soft, velvety texture of a dense canopy. By purposely keeping the wool loose and airy rather than firm, I allowed the piece to retain a delicate fluffiness, mimicking the organic, layered clusters found in nature."
   },
  {
     id: 17,
