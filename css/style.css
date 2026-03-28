@@ -24,21 +24,20 @@ body{
   background: rgba(255,210,240,0.6);
   backdrop-filter: blur(10px);
   height: 80px;
-  flex-wrap: nowrap;
-  gap: 10px;
 }
 
 .nav nav a {
-  margin-left: 20px;
   text-decoration: none;
   color: #333;
   font-size: 14px;
-  padding: 20px 30px;
+  padding: 10px 10px;
+  display: flex;
+  gap: 2px;
 }
 .nav-logo{
   font-weight:600;font-size:16px;letter-spacing:1px;
   font-family: 'Playfair Display', serif;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-weight: 500s;
   font-size: 23px;
   line-height: 1;
