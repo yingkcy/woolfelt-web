@@ -53,3 +53,9 @@ window.addEventListener("load", () => {
   }
   draw();
 });
+const btn = document.querySelector(".menu-btn");
+const menu = document.querySelector(".menu-overlay");
+
+btn.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});

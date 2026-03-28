@@ -254,14 +254,14 @@ const works = [
   },
  {
     id: 24,
-    title_zh: "玫瑰綻放",
-    title_en: "Blooming Rose",
+    title_zh: "回望之間",
+    title_en: "Between a Glance",
     name: "鐘以心",
     seat: "24",
     img: "image/works/24.jpg",
     ref: "image/drafts/24.jpg",
-    desc_zh: "以羊毛氈呈現玫瑰花瓣層層綻放的姿態。",
-    desc_en: "This piece recreates the layered blooming of a rose using wool felt."
+    desc_zh: "紅磚鋪展的校園裡，一隻名為「巧克力雞」的鳥靜靜佇立，與一位女孩的背影對望。月光穿過枝葉灑落，時間在目光交會的瞬間緩緩流動。從初春的嫩綠，到盛夏的濃蔭，從秋日的微涼，到冬季的寧靜，四季在無聲中更迭。青春，彷彿停留在那一刻——在彰女熟悉而溫暖的校園裡，被悄悄收藏。",
+    desc_en: "On the red-brick campus, a bird named “Chocolate Chicken” stands quietly, gazing toward the back of a girl. Sunlight filters through the leaves, and time flows gently within that silent exchange of glances. From the tender green of spring to the dense shade of summer, from the cool air of autumn to the calm of winter, the seasons pass in quiet succession.Youth seems to pause in that very moment—softly preserved within the familiar and warm campus of Chang-Nu."
   },
  {
     id: 25,

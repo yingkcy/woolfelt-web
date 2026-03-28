@@ -145,8 +145,8 @@ function showResult(){
 
   let msg = "";
   if(score === 100) msg = "🎉 你太厲害了！恭喜獲得大獎！請憑手機畫面換取禮物~";
-  else if(score >= 80) msg = "👍 很棒！恭喜獲得中獎！請憑手機畫面換取禮物~";
-  else if(score >= 60) msg = "🙂 不錯！恭喜落得小獎！請憑手機畫面換取禮物~";
+  else if(score >= 80) msg = "👍很棒！恭喜獲得中獎！請憑手機畫面換取禮物~";
+  else if(score >= 60) msg = "🙂 不錯！恭喜獲得小獎！請憑手機畫面換取禮物~";
   else msg = "😅60分以下沒有禮物，沒關係，多玩幾次就好！";
   document.getElementById("finalMessage").textContent = msg;
 }
