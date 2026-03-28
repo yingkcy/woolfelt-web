@@ -4,12 +4,13 @@ function reveal(){
   const windowHeight = window.innerHeight;
   elements.forEach((el)=>{
     const elementTop = el.getBoundingClientRect().top;
-    if(elementTop < windowHeight - 80){
+    if(elementTop < windowHeight +100){
       el.classList.add("show");
     }
   });
 }
 window.addEventListener("scroll",reveal);
+window.addEventListener("load",reveal);
 reveal();
 
 // 漂浮羊毛纖維
