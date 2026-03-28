@@ -432,25 +432,6 @@ font-family: "Noto Sans TC", sans-serif;
 /* ===== 手機版（解你最大痛點🔥） ===== */
 @media (max-width: 768px) {
 
-  .main-title {
-    font-size: 30px;
-  }
-
-  .main-title span {
-    font-size: 20px;
-  }
-
-  .exhibition-main {
-    font-size: 24px;
-  }
-
-  .exhibition-title {
-    font-size: 16px;
-  }
-
-  .info-text {
-    font-size: 15px;
-  }
 
   .nav {
     flex-direction: column;
