@@ -457,6 +457,7 @@ font-family: "Noto Sans TC", sans-serif;
     align-items: flex-start;
     gap: 5px;
     height: auto;
+    border-bottom: 1px solid rgba (0,0,0,0,1);
   }
 
   .nav nav {
@@ -466,8 +467,14 @@ font-family: "Noto Sans TC", sans-serif;
   }
 
   .nav a {
-    flex : 1 1 30% ;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #444;
+    flex : 1  ;
     text-align: center;
+  }
+  .nav a:hover{
+    color: #000;
   }
 
   .gallery {
