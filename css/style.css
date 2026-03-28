@@ -165,13 +165,13 @@ line-height:1.6;
 
 /* 動畫 */
 
-.reveal{
+.scroll-fade{
 opacity:0;
 transform:translateY(40px);
 transition:all 1s ease;
 }
 
-.reveal.show{
+.scroll-fade.show{
 opacity:1;
 transform:translateY(0);
 }
