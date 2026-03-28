@@ -1,0 +1,447 @@
+/* Reset */
+html,body{margin:0;padding:0;}
+*{box-sizing:border-box;}
+
+/* Base */
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:#333;
+  line-height:1.8;
+  background: linear-gradient(180deg, #F7D9E6, #E7F2E8, #E5F0FA);
+  min-height:100vh;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.nav nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+.nav-logo{font-weight:600;font-size:16px;letter-spacing:1px;}
+.nav a:hover{opacity:0.6;}
+
+/* Hero */
+.hero{
+  position:relative;
+  min-height:100vh;
+  padding:120px 20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  overflow:hidden;
+}
+
+/* Canvas 層 */
+#fiberCanvas{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+  opacity:0.35;
+  z-index:0;
+}
+
+/* 雲霧層 */
+.cloud{
+  position:absolute;
+  background:white;
+  border-radius:50%;
+  opacity:0.35;
+  filter:blur(40px);
+}
+.cloud1{
+  width:300px; height:120px;
+  top:100px; left:-150px;
+  animation:float 40s linear infinite;
+}
+.cloud2{
+  width:250px; height:100px;
+  bottom:120px; right:-120px;
+  animation:float2 45s linear infinite;
+}
+@keyframes float{from{transform:translateX(0);}to{transform:translateX(140vw);}}
+@keyframes float2{from{transform:translateX(0);}to{transform:translateX(-140vw);}}
+
+/* Intro 文字層 */
+.intro{max-width:700px;position:relative;z-index:1;}
+.subtitle{font-size:18px;opacity:0.7;margin-bottom:40px;}
+.chinese{font-size:18px;letter-spacing:1px;}
+.english{font-size:14px;opacity:0.55;font-style:italic;margin-top:-10px;margin-bottom:25px;}
+.scroll-fade{opacity:0;transform:translateY(40px);transition:all 1.2s ease;}
+.scroll-fade.show{opacity:1;transform:translateY(0);}
+.final{font-size:28px;margin-top:60px;font-weight:500;letter-spacing:2px;
+text-shadow:0 0 10px rgba(255,255,255,0.9),0 0 20px rgba(255,210,240,0.8),0 0 50px rgba(255,210,240,0.6);}
+
+/* Hero 霧感 */
+.hero::after{
+  content:"";
+  position:absolute;
+  top:0; left:0;
+  width:100%; height:100%;
+  background:radial-gradient(circle at center, rgba(255,255,255,0.5), rgba(255,255,255,0));
+  filter:blur(80px);
+  pointer-events:none;
+  z-index:0;
+}
+
+/* Button */
+.enter-btn{
+  display:inline-block;
+  margin-top:40px;
+  padding:12px 30px;
+  border:1px solid #333;
+  text-decoration:none;
+  color:#333;
+  transition:0.3s;
+}
+.enter-btn:hover{background:#333;color:white;}
+
+/* Footer */
+footer{text-align:center;padding:40px 0;opacity:0.6;}
+
+.exhibition-info{
+text-align:center;
+padding:140px 20px 80px 20px;
+}
+
+.exhibition-title{
+font-size:36px;
+line-height:1.6;
+margin-bottom:30px;
+}
+
+.exhibition-main{
+font-size:48px;
+font-weight:600;
+letter-spacing:3px;
+margin-bottom:70px;
+}
+
+.eng{
+font-family:"Playfair Display", serif;
+font-size:0.65em;
+letter-spacing:2px;
+color:#666;
+}
+
+.exhibition-details{
+display:flex;
+justify-content:center;
+gap:120px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.info-block{
+background:rgba(255,255,255,0.6);
+backdrop-filter:blur(12px);
+padding:28px 40px;
+border-radius:18px;
+min-width:240px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.info-label{
+font-size:25px;
+margin-bottom:8px;
+}
+
+.info-text{
+font-size:18px;
+line-height:1.6;
+}
+
+/* 動畫 */
+
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:all 1s ease;
+}
+
+.reveal.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* 一個一個出現 */
+
+.reveal:nth-child(1){transition-delay:0.2s;}
+.reveal:nth-child(2){transition-delay:0.4s;}
+.reveal:nth-child(3){transition-delay:0.6s;}
+.reveal:nth-child(4){transition-delay:0.8s;}
+
+body{
+font-family: "Noto Sans TC", sans-serif;
+}
+/* 作品區 */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 手機2欄 */
+  gap: 16px;
+  padding: 80px 20px;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr); /* 電腦4欄 */
+  }
+}
+
+/* 卡片 */
+.card {
+  background: rgba(255,255,255,0.9);
+  border-radius: 12px;
+  overflow: hidden;
+
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover; /* ⭐關鍵 */
+
+}
+
+.card-info {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card-name {
+  font-size: 12px;
+  color: #666;
+}
+
+
+/* hover 浮起 */
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+
+.card p {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+.detail {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 30px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 12px;
+}
+
+.detail img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+/* 📱 手機版 */
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  .nav nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+}
+/* ===== 主視覺（解決沒有重點的問題） ===== */
+.main-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.main-title span {
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+
+/* ===== 展覽資訊區（變高級） ===== */
+.exhibition-info {
+  text-align: center;
+  padding: 120px 20px 60px;
+}
+
+.exhibition-title {
+  font-size: 22px;
+  line-height: 1.6;
+  margin-top: 40px;
+}
+
+.exhibition-main {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-top: 20px;
+}
+
+
+/* ===== 資訊卡（質感核心🔥） ===== */
+.exhibition-details {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.info-block {
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(15px);
+  padding: 25px 35px;
+  border-radius: 20px;
+  min-width: 220px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.info-block:hover {
+  transform: translateY(-5px);
+}
+
+.info-label {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.info-text {
+  font-size: 18px;
+}
+
+
+/* ===== nav 升級（不再擠） ===== */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.nav nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+
+/* ===== 作品卡再升級（你會有感） ===== */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.card-name {
+  font-size: 12px;
+  color: #777;
+}
+
+
+/* ===== 手機版（解你最大痛點🔥） ===== */
+@media (max-width: 768px) {
+
+  .main-title {
+    font-size: 30px;
+  }
+
+  .main-title span {
+    font-size: 18px;
+  }
+
+  .exhibition-main {
+    font-size: 24px;
+  }
+
+  .exhibition-title {
+    font-size: 16px;
+  }
+
+  .info-text {
+    font-size: 14px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
