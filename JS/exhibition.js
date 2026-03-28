@@ -5,7 +5,7 @@ works.forEach(work => {
   div.className = "card hidden";
 
   div.innerHTML = `
-  <img src="${work.img}">
+  <img src="${work.img}" loading="lazy">
   <div class="card-info">
     <div class="card-title">${work.title_zh}</div>
     <div class="card-name">${work.name}</div>
