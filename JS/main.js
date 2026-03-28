@@ -1,4 +1,9 @@
 // 滑動文字動畫
+window.addEventListener("load", () => {
+    document.querySelectorAll(".scroll-fade").forEach(el => {
+        el.classList.add("show");
+    });
+});
 const elements = document.querySelectorAll(".scroll-fade");
 function reveal(){
   const windowHeight = window.innerHeight;
