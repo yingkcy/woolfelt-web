@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>About</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* ===== 整體 ===== */
+    .about-section {
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    /* ===== 動畫 ===== */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 1s ease forwards;
+    }
+
+    .fade-up:nth-child(1) { animation-delay: 0.2s; }
+    .fade-up:nth-child(2) { animation-delay: 0.4s; }
+    .fade-up:nth-child(3) { animation-delay: 0.6s; }
+    .fade-up:nth-child(4) { animation-delay: 0.8s; }
+    .fade-up:nth-child(5) { animation-delay: 1s; }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===== 上半（電影感） ===== */
+    .credits-title {
+      font-size: 28px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    .credits-sub {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 60px;
+    }
+
+    .credits-block {
+      margin-bottom: 40px;
+    }
+
+    .credits-role {
+      font-size: 14px;
+      letter-spacing: 2px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .credits-name {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    /* ===== 分隔線 ===== */
+    .divider {
+      margin: 80px auto;
+      width: 60px;
+      height: 1px;
+      background: rgba(0,0,0,0.3);
+    }
+
+    /* ===== 下半（團隊） ===== */
+    .team-section {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .team-title {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .team-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .team-list span {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      font-size: 14px;
+      background: rgba(255,255,255,0.7);
+      padding: 8px 12px;
+      border-radius: 20px;
+      min-width: 80px;
+    }
+
+    .team-list small {
+      font-size: 10px;
+      color: #888;
+    }
+
+    /* 📱 手機優化 */
+    @media (max-width: 768px) {
+      .credits-title { font-size: 22px; }
+      .credits-name { font-size: 16px; }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<section class="hero">
+
+  <canvas id="fiberCanvas"></canvas>
+  <div class="cloud cloud1"></div>
+  <div class="cloud cloud2"></div>
+
+  <div class="about-section">
+
+    <!-- 🎬 上半 -->
+    <h2 class="credits-title fade-up">Entwined Vitality《烏無舞霧》</h2>
+    <p class="credits-sub fade-up">Exhibition Credits</p>
+
+    <div class="credits-block fade-up">
+      <div class="credits-role">Project Leader</div>
+      <div class="credits-name">Cindy 胡芯慈</div>
+    </div>
+
+    <div class="credits-block fade-up">
+      <div class="credits-role">Host</div>
+      <div class="credits-name">Anny 李安禹</div>
+      <div class="credits-name">Deborah 鐘以心</div>
+    </div>
+
+    <div class="credits-block fade-up">
+      <div class="credits-role">Poster Designer</div>
+      <div class="credits-name">Irene 吳亦琁</div>
+      <div class="credits-name">Shiny 吳湘翎</div>
+    </div>
+
+    <div class="credits-block fade-up">
+      <div class="credits-role">Website Manager</div>
+      <div class="credits-name">Annie 柯承瑩</div>
+      <div class="credits-name">Nancy 黃咨寧</div>
+    </div>
+
+    <div class="credits-block fade-up">
+      <div class="credits-role">Public Relations</div>
+      <div class="credits-name">Hannah 許淳涵</div>
+      <div class="credits-name">Ivy 謝宜蓁</div>
+      <div class="credits-name">Jocelyn 郭芷菱</div>
+      <div class="credits-name">Angela 洪品熏</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 👥 下半 -->
+    <div class="team-section fade-up">
+
+      <div class="team-title">Venue Setup Team</div>
+
+      <div class="team-list">
+        <span>Jenny<small>朱韋蓁</small></span>
+        <span>Doreen<small>林彤諺</small></span>
+        <span>Enya<small>王佳恩</small></span>
+        <span>Mira<small>吳家溱</small></span>
+        <span>Joanne<small>涂潔安</small></span>
+        <span>Ada<small>劉瑩茜</small></span>
+        <span>Yima<small>籃妤喬</small></span>
+        <span>Claire<small>謝靖淇</small></span>
+        <span>Shirley<small>黃采薇</small></span>
+        <span>Judy<small>蔡宜臻</small></span>
+        <span>Doris<small>張畇蓁</small></span>
+        <span>Abbie<small>黃宥潔</small></span>
+        <span>Liz<small>劉晏芮</small></span>
+        <span>Sharon<small>安祐萱</small></span>
+        <span>Esther<small>吳星恬</small></span>
+        <span>May<small>林俞君</small></span>
+        <span>Yuki<small>高偲晴</small></span>
+        <span>Joanna<small>陳俞安</small></span>
+        <span>Kimi<small>林采螢</small></span>
+        <span>Irene<small>許芮瑛</small></span>
+        <span>Julia<small>郭祐竹</small></span
+        
+      </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <p class="fade-up" style="margin-top:40px; font-size:14px; color:#666;">
+      青春會散場，但我們記得彼此。
+    </p>
+
+  </div>
+
+</section>
+
+<script src="JS/main.js"></script>
+
+</body>
+</html>

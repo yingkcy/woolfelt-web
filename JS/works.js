@@ -1,14 +1,14 @@
 const works = [
   {
     id: 1,
-    title_zh: "玫瑰綻放",
-    title_en: "Blooming Rose",
+    title_zh: "小黑板",
+    title_en: "The small chalkboard",
     name: "王佳恩",
     seat: "01",
     img: "image/works/01.jpg",
     ref: "image/drafts/01.jpg",
-    desc_zh: "以羊毛氈呈現玫瑰花瓣層層綻放的姿態。",
-    desc_en: "This piece recreates the layered blooming of a rose using wool felt."
+    desc_zh: "墨綠色的小黑板一直都靜靜的待在教室的一角，陪我們歡笑、陪我們哭、陪我們度過高中三年的時光。紀錄了功課、紀錄了考試，也紀錄了我們這三年來的心酸血淚史。對我而言，它就是我們高中三年的體現。",
+    desc_en: "The dark green chalkboard has remained quietly in a corner of the classroom, accompanying us through our laughter,  tears, and  the entirety of our three-year high school journey.It kept track of our homework, our exams, and all the struggles we went through.To me, it is the embodiment of our three years of high school."
   },
   {
     id: 2,
