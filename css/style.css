@@ -315,6 +315,7 @@ font-family: "Noto Sans TC", sans-serif;
   }
   .nav nav a{
     font-size: 14px;
+    margin-left: 10px;
   }
 }
 /* ===== 主視覺（解決沒有重點的問題） ===== */
