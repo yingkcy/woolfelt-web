@@ -309,7 +309,6 @@ font-family: "Noto Sans TC", sans-serif;
 
   .nav nav {
     display: flex;
-    gap: 10px;
   }
   .nav-logo{
     font-size: 18px;
