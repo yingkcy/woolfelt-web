@@ -303,23 +303,7 @@ font-family: "Noto Sans TC", sans-serif;
     line-height: 1.6;
   }
 
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
 
-  .nav nav {
-    display: flex;
-  }
-  .nav-logo{
-    font-size: 18px;
-  }
-  .nav nav a{
-    font-size: 12px;
-    padding: 7px;
-  }
 }
 /* ===== 主視覺（解決沒有重點的問題） ===== */
 .main-title {
@@ -441,26 +425,20 @@ font-family: "Noto Sans TC", sans-serif;
 
 
   .nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
-    padding: 12px 20px;
-    border-bottom: 1px solid rgba (0,0,0,0,1);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .nav nav {
     display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
+    flex-wrap: nowrap;
+    gap: 8px;
   }
 
   .nav a {
-    font-size: 13px;
-    letter-spacing: 1px;
-    color: #444;
-    flex : 1  ;
-    text-align: center;
-  }
+    font-size: 12px;
+    flex: none;
   .nav a:hover{
     color: #000;
   }
