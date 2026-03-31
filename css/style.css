@@ -284,9 +284,6 @@ font-family: "Noto Sans TC", sans-serif;
 }
 /* 📱 手機版 */
 @media (max-width: 768px) {
-  body{
-    background: red !important;
-  }
 
   h1 {
     font-size: 24px;
