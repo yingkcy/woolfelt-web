@@ -33,7 +33,6 @@ body{
   padding: 10px 10px;
   display: flex;
   gap: 2px;
-  justify-content: end;
 }
 .nav-logo{
   font-weight:600;font-size:16px;letter-spacing:1px;
@@ -305,6 +304,7 @@ font-family: "Noto Sans TC", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   .nav nav {
