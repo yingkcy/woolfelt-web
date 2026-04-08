@@ -286,11 +286,11 @@ font-family: "Noto Sans TC", sans-serif;
 @media (max-width: 768px) {
 
   h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 16x;
     letter-spacing: 2px;
     opacity: 0.7;
   }
