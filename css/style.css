@@ -286,17 +286,17 @@ font-family: "Noto Sans TC", sans-serif;
 @media (max-width: 768px) {
 
   h1 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   h2 {
-    font-size: 16x;
+    font-size: 18x;
     letter-spacing: 2px;
     opacity: 0.7;
   }
 
   p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
   }
 
@@ -394,6 +394,11 @@ font-family: "Noto Sans TC", sans-serif;
   text-decoration: none;
   color: #333;
   font-size: 14px;
+}
+.nav-logo
+{
+  text-decoration: none;
+  color: inherit;
 }
 
 
